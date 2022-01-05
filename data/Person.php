@@ -9,8 +9,12 @@ class Person {
 //   var ?string $address = null; // addres bole null atau nullable properties
 //   var string $country;
 
-    function sayHello(string $name){
-        echo "Hallo $name". PHP_EOL;
+    function sayHello(?string $name){
+        if (is_null($name)) {
+            echo "Hi, My Name is $this->name". PHP_EOL;
+        }else{
+            echo "Hi $name, My Name is $this->name". PHP_EOL;
+        }
     }
 
 }
