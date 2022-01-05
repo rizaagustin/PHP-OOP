@@ -1,8 +1,9 @@
 <?php
 class Person {
-  var $name; //properties
-  var $address;
-  var $country = "Indonesia"; //default value
+    // const AUTHOR = "Riza Agustin"; // penggunaan constant
+    var $name; //properties
+    var $address;
+    var $country = "Indonesia"; //default value
 
 // hanya bisa di php 7.4 keatas saat ini kita pakai 7.2
 //   var string $name; //properties
