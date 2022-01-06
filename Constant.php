@@ -1,10 +1,12 @@
 <?php 
+require_once "data/Person.php";
 // versi 1
 define("APPLICATION", "BELAJAR OOP");
-//PHP const APP_VERSION = 1.0.0;
+// versi 2 menuliskan constan
+const APP_VERSION = "1.0.0";
 
 echo APPLICATION . PHP_EOL;
-// echo APP_VERSION . PHP_EOL;
+echo APP_VERSION . PHP_EOL;
 
-// echo Person::Author . PHP_EOL; // pemanggilan constant
+echo Person::AUTHOR . PHP_EOL; // pemanggilan constant
 
