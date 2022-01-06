@@ -5,6 +5,14 @@ namespace Data\One {
     {
 
     }
+
+    class Sample{
+
+    }
+
+    class Dummy{
+        
+    }
 }
 
 namespace Data\Two {
