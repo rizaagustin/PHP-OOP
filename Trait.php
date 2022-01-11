@@ -9,4 +9,7 @@ $person->goodBye("Riza");
 $person->Hello("Eki");
 
 $person->name = "Billy";
+
 var_dump($person);
+
+$person->run();

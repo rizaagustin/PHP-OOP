@@ -37,8 +37,28 @@ trait HasName
     public string $name;
 }
 
+trait CanRun
+{
+    public abstract function run(): void;
+}
+
 class Person 
 {
     // semua function, properties dimiliki oleh class person
-    use SaygoodBye, SayHello, HasName;
+    use SaygoodBye, SayHello, HasName, CanRun;
+
+    public function run(): void
+    {
+        echo "Person $this->name is running" . PHP_EOL;
+    }
+
+    public function goodBye(?string $name): void
+    {
+        echo "Good bye in Person" . PHP_EOL;
+    }
+
+    public function hello(?string $name): void
+    {
+        echo "Hello in Person" . PHP_EOL;
+    }
 }
