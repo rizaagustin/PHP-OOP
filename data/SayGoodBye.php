@@ -42,11 +42,19 @@ trait CanRun
     public abstract function run(): void;
 }
 
+trait ALL{
+    use SaygoodBye, SayHello, HasName, CanRun;
+}
+
 class Person 
 {
-    // semua function, properties dimiliki oleh class person
-    use SaygoodBye, SayHello, HasName, CanRun;
-
+    // // semua function, properties dimiliki oleh class person
+    // use SaygoodBye, SayHello, HasName, CanRun{
+    //     // hello as private;
+    //     // goodbye as private;
+    // }
+    
+    use ALL;
     public function run(): void
     {
         echo "Person $this->name is running" . PHP_EOL;
