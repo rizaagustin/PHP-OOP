@@ -22,4 +22,10 @@ class Student
     {
         return "Student id:$this->id, name:$this->name, value:$this->value";
     }
+
+    public function __invoke(...$arguments): void
+    {
+        $join = join(",",$arguments);
+        echo "Invoke Students with arguments $join" . PHP_EOL;
+    }
 }
