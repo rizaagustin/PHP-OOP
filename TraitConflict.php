@@ -26,7 +26,9 @@ trait B
 
 class sample
 {
+    
     use A,B{
+        // Solusi menggunakan insteadof apabila function di salah satu trait ada yg sama
         A::doA insteadof B;
         B::doB insteadof A;
     }
